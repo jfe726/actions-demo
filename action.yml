@@ -1,0 +1,15 @@
+name: cj-example-action
+description: An example Action
+author: CJ
+
+branding:
+  icon: bell
+  color: green
+
+runs:
+  using: composite
+  steps:
+    - name: Get Date & Time
+      shell: bash
+      run: |
+        date -Iseconds
